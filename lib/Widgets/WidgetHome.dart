@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 
 // Custom packages
-import 'package:flutter_app_1/Pages/PageHome.dart';
-import 'package:flutter_app_1/Configurations/ConfigurationApp.dart';
+import 'package:flutter_app_counter/Pages/PageHome.dart';
+import 'package:flutter_app_counter/Configurations/ConfigurationApp.dart';
 
 class WidgetHome extends State<Home> {
   final ConfigurationApp config = new ConfigurationApp();

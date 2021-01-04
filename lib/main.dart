@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'Pages/PageHome.dart';
+// Custom packages
+import 'package:flutter_app_counter/Pages/PageHome.dart';
 
 void main() {
   runApp(
