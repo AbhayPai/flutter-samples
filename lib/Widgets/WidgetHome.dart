@@ -35,6 +35,10 @@ class WidgetHome extends State<Home> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: <Widget>[
+                    Divider(
+                      height: 30.0,
+                      color: Colors.black,
+                    ),
                     Flexible(
                       flex: 1,
                       child: Text(
@@ -48,6 +52,9 @@ class WidgetHome extends State<Home> {
                         ),
                       ),
                     ),
+                    SizedBox(
+                      height: 20.0,
+                    ),
                     Flexible(
                       flex: 1,
                       child: Text(
@@ -60,6 +67,10 @@ class WidgetHome extends State<Home> {
                           color: Colors.red,
                         ),
                       ),
+                    ),
+                    Divider(
+                      height: 30.0,
+                      color: Colors.black,
                     ),
                   ],
                 ),
