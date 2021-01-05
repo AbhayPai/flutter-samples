@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
+import 'package:flutter_app_counter/Pages/PageAbout.dart';
 
 // Custom packages
 import 'package:flutter_app_counter/Pages/PageHome.dart';
-import 'package:flutter_app_counter/Configurations/ConfigurationApp.dart';
 import 'package:flutter_app_counter/Widgets/WidgetAppBar.dart';
+import 'package:flutter_app_counter/Configurations/ConfigurationApp.dart';
 
-class StateHome extends State<Home> {
+class StateHome extends State<PageHome> {
   final ConfigurationApp configApp = new ConfigurationApp();
   final WidgetAppBar widgetAppBar = new WidgetAppBar();
 
@@ -70,6 +71,17 @@ class StateHome extends State<Home> {
                       height: 30.0,
                       color: Colors.black,
                     ),
+                    RaisedButton(
+                      child: Text(
+                        'About'
+                      ),
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => PageAbout())
+                        );
+                      }
+                    ),
                   ],
                 ),
               ),
@@ -85,6 +97,7 @@ class StateHome extends State<Home> {
                 child: Icon(
                   Icons.add,
                 ),
+                heroTag: "incrementCounter",
                 backgroundColor: Colors.green,
                 onPressed: incrementCounter,
               ),
@@ -95,6 +108,7 @@ class StateHome extends State<Home> {
                 child: Icon(
                   Icons.remove,
                 ),
+                heroTag: "decrementCounter",
                 backgroundColor: Colors.red,
                 onPressed: decrementCounter,
               ),

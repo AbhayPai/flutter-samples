@@ -6,7 +6,13 @@ class ConfigurationApp {
   }
 
   String getAppWelcomeMessage() {
-    String welcomeMsg = 'Welcome to Counter';
+    String welcomeMsg = 'Home Page';
+
+    return welcomeMsg;
+  }
+
+  String getAboutMessage() {
+    String welcomeMsg = 'About Page';
 
     return welcomeMsg;
   }

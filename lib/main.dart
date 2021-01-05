@@ -7,7 +7,7 @@ void main() {
   runApp(
     MaterialApp(
       // referenced from https://api.flutter.dev/flutter/material/Scaffold/Scaffold.html
-      home: Home()
+      home: PageHome()
     ),
   );
 }
