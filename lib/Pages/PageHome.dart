@@ -1,9 +1,9 @@
 import 'package:flutter/widgets.dart';
 
 // Custom packages
-import 'package:flutter_app_counter/Widgets/WidgetHome.dart';
+import 'package:flutter_app_counter/States/StateHome.dart';
 
 class Home extends StatefulWidget {
   @override
-  WidgetHome createState() => WidgetHome();
+  StateHome createState() => StateHome();
 }

@@ -4,26 +4,24 @@ import 'package:flutter/painting.dart';
 // Custom packages
 import 'package:flutter_app_counter/Pages/PageHome.dart';
 import 'package:flutter_app_counter/Configurations/ConfigurationApp.dart';
+import 'package:flutter_app_counter/Widgets/WidgetAppBar.dart';
 
-class WidgetHome extends State<Home> {
-  final ConfigurationApp config = new ConfigurationApp();
+class StateHome extends State<Home> {
+  final ConfigurationApp configApp = new ConfigurationApp();
+  final WidgetAppBar widgetAppBar = new WidgetAppBar();
 
   int counter = 0;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: Text(
-            config.getAppTitle(),
-          ),
-          centerTitle: true,
-          backgroundColor: Colors.blue,
+        appBar: widgetAppBar.defaultAppBar(
+          configApp.getAppTitle()
         ),
         body: Container(
           decoration: BoxDecoration(
             image: DecorationImage(
-              // image: NetworkImage(getAppExtnlBgImage()),
+              // image: NetworkImage(configApp.getAppExtnlBgImage()),
               image: AssetImage('assets/images/appBgImage.jpeg'),
               fit: BoxFit.cover,
             ),
@@ -42,7 +40,7 @@ class WidgetHome extends State<Home> {
                     Flexible(
                       flex: 1,
                       child: Text(
-                        config.getAppWelcomeMessage(),
+                        configApp.getAppWelcomeMessage(),
                         textAlign: TextAlign.center,
                         style: TextStyle(
                           fontSize: 22.0,

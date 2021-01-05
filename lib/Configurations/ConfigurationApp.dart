@@ -1,12 +1,12 @@
 class ConfigurationApp {
   String getAppTitle() {
-    String appTitle = 'Flutter Application 1';
+    String appTitle = 'Flutter App Counter';
 
     return appTitle.toUpperCase();
   }
 
   String getAppWelcomeMessage() {
-    String welcomeMsg = 'Welcome to Flutter Application';
+    String welcomeMsg = 'Welcome to Counter';
 
     return welcomeMsg;
   }
