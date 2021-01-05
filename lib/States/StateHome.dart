@@ -51,22 +51,6 @@ class StateHome extends State<PageHome> {
                         ),
                       ),
                     ),
-                    SizedBox(
-                      height: 20.0,
-                    ),
-                    Flexible(
-                      flex: 1,
-                      child: Text(
-                        "Counter is at $counter.",
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                          fontSize: 22.0,
-                          letterSpacing: 2.0,
-                          fontWeight: FontWeight.w800,
-                          color: Colors.red,
-                        ),
-                      ),
-                    ),
                     Divider(
                       height: 30.0,
                       color: Colors.black,
@@ -78,7 +62,9 @@ class StateHome extends State<PageHome> {
                       onPressed: () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => PageAbout())
+                          MaterialPageRoute(
+                            builder: (context) => PageAbout()
+                          )
                         );
                       }
                     ),
@@ -100,6 +86,21 @@ class StateHome extends State<PageHome> {
                 heroTag: "incrementCounter",
                 backgroundColor: Colors.green,
                 onPressed: incrementCounter,
+              ),
+            ),
+            Expanded(
+              flex: 1,
+              child: FlatButton(
+                disabledColor: Colors.black,
+                child: Text(
+                  "Counter: $counter",
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontSize: 12.0,
+                    letterSpacing: 2.0,
+                    color: Colors.white,
+                  ),
+                ),
               ),
             ),
             Expanded(

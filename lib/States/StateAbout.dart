@@ -61,7 +61,9 @@ class StateAbout extends State<PageAbout> {
                     onPressed: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => PageHome())
+                        MaterialPageRoute(
+                          builder: (context) => PageHome()
+                        )
                       );
                     },
                   ),
