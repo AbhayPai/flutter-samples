@@ -55,6 +55,9 @@ class StateHome extends State<PageHome> {
                       height: 30.0,
                       color: Colors.black,
                     ),
+                    SizedBox(
+                      height: 20.0,
+                    ),
                     RaisedButton(
                       child: Text(
                         'About'
