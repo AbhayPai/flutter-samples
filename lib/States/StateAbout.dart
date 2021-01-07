@@ -3,6 +3,7 @@ import 'package:flutter/painting.dart';
 
 // Custom packages
 import 'package:flutter_app_counter/Pages/PageAbout.dart';
+import 'package:flutter_app_counter/Templates/TemplateCardQuote.dart';
 import 'package:flutter_app_counter/Widgets/WidgetAppScaffold.dart';
 import 'package:flutter_app_counter/Configurations/ConfigurationApp.dart';
 
@@ -51,6 +52,10 @@ class StateAbout extends State<PageAbout> {
                   ),
                   SizedBox(
                     height: 20.0,
+                  ),
+                  TemplateCardQuote(
+                    'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+                    'Abhay Pai',
                   ),
                 ],
               ),

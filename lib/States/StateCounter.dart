@@ -3,7 +3,6 @@ import 'package:flutter/painting.dart';
 
 // Custom packages
 import 'package:flutter_app_counter/Pages/PageCounter.dart';
-import 'package:flutter_app_counter/Widgets/WidgetAppBar.dart';
 import 'package:flutter_app_counter/Widgets/WidgetAppScaffold.dart';
 import 'package:flutter_app_counter/Configurations/ConfigurationApp.dart';
 
